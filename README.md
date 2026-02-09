@@ -37,7 +37,7 @@ Project is focused on **DOM manipulation, events and basic logic**.
 ## 🌐 Live Demo
 
 🔗 Live preview:  
-👉 https://your-username.github.io/focusday/
+👉 https://focusday-app.vercel.app/
 
 Try the app and plan your day with focus 🚀
 
