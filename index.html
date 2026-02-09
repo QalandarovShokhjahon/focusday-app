@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="uz" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6366f1">
+    <meta name="description" content="Zamonaviy To-Do List ilovasi">
+    <title>Focusday</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+    <link rel="apple-touch-icon" href="icon-192x192.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Vazifalar Ro'yxati</h1>
+        <div class="input-container">
+            <input type="text" 
+                   id="taskInput" 
+                   placeholder="Yangi vazifa..." 
+                   aria-label="Yangi vazifa qo'shish"
+                   autocomplete="off"
+                   class="task-input">
+            <div class="datetime-container">
+                <input type="date" 
+                       id="taskDate" 
+                       class="date-input"
+                       aria-label="Vazifa sanasi">
+                <input type="time" 
+                       id="taskTime" 
+                       class="time-input"
+                       aria-label="Vaqt">
+            </div>
+            <button onclick="addTask()" class="add-btn" aria-label="Qo'shish">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="5" x2="12" y2="19"></line>
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                </svg>
+                <span>Qo'shish</span>
+            </button>
+        </div>
+        <ul id="taskList" aria-live="polite" class="task-list"></ul>
+        <div id="taskCount" class="task-count">0 ta vazifa</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
